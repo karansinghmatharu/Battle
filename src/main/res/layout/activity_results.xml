@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border">
+
+    <LinearLayout
+        android:id="@+id/finalLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_game_over"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@android:color/black"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/game_over"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/resultsRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/winnerImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/holo_orange_light"
+                android:src="@drawable/draw" />
+
+            <TextView
+                android:id="@+id/tv_win_team_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/winnerImage"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/winning_team" />
+
+            <TextView
+                android:id="@+id/tv_battles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_win_team_name"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/battles" />
+
+            <TextView
+                android:id="@+id/tv_survivors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_battles"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/survivors" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/finalLL"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@android:color/black"
+        android:text="@string/play_again"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold" />
+</RelativeLayout>

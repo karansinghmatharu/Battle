@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@drawable/border">
+
+    <LinearLayout
+        android:id="@+id/headLLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/imageTransform"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="20"
+            android:src="@drawable/autobot" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="80">
+
+            <TextView
+                android:id="@+id/tv_enter_transformer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/enter_trans"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/hint_enter_autobot_name"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/headLLay"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/strength" />
+
+    <SeekBar
+        android:id="@+id/sb_strength"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_strength"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/tv_strength"
+        android:max="9"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/tv_intell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_strength"
+        android:layout_marginTop="17dp"
+        android:layout_toLeftOf="@+id/sb_strength"
+        android:layout_toStartOf="@+id/sb_strength"
+        android:text="@string/intelligence" />
+
+    <SeekBar
+        android:id="@+id/sb_intell"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_intell"
+        android:layout_toEndOf="@+id/tv_intell"
+        android:layout_toRightOf="@+id/tv_intell"
+        android:max="9"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/tv_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sb_intell"
+        android:layout_marginTop="13dp"
+        android:layout_toLeftOf="@+id/sb_intell"
+        android:layout_toStartOf="@+id/sb_intell"
+        android:text="@string/speed" />
+
+    <SeekBar
+        android:id="@+id/sb_speed"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_speed"
+        android:layout_toEndOf="@+id/tv_speed"
+        android:layout_toRightOf="@+id/tv_speed"
+        android:max="9"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/tv_endu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sb_speed"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@+id/sb_speed"
+        android:layout_toStartOf="@+id/sb_speed"
+        android:text="@string/endurance" />
+
+    <SeekBar
+        android:id="@+id/sb_endu"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_endu"
+        android:layout_toEndOf="@+id/tv_endu"
+        android:layout_toRightOf="@+id/tv_endu"
+        android:max="9"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sb_endu"
+        android:layout_marginTop="13dp"
+        android:layout_toLeftOf="@+id/sb_endu"
+        android:layout_toStartOf="@+id/sb_endu"
+        android:text="@string/rank" />
+
+
+    <SeekBar
+        android:id="@+id/sb_rank"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_rank"
+        android:layout_toEndOf="@+id/tv_rank"
+        android:layout_toRightOf="@+id/tv_rank"
+        android:max="9"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/tv_cour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sb_rank"
+        android:layout_marginTop="13dp"
+        android:layout_toLeftOf="@+id/sb_rank"
+        android:layout_toStartOf="@+id/sb_rank"
+        android:text="@string/courage" />
+
+    <SeekBar
+        android:id="@+id/sb_cour"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_cour"
+        android:layout_toEndOf="@+id/tv_cour"
+        android:layout_toRightOf="@+id/tv_cour"
+        android:max="9"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/tv_fp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_cour"
+        android:layout_marginTop="13dp"
+        android:layout_toLeftOf="@+id/sb_cour"
+        android:layout_toStartOf="@+id/sb_cour"
+        android:text="@string/firepower" />
+
+    <SeekBar
+        android:id="@+id/sb_fp"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_fp"
+        android:layout_toEndOf="@+id/tv_fp"
+        android:layout_toRightOf="@+id/tv_fp"
+        android:max="9"
+        android:progress="1" />
+
+
+    <TextView
+        android:id="@+id/tv_skill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fp"
+        android:layout_marginTop="13dp"
+        android:layout_toLeftOf="@+id/sb_fp"
+        android:layout_toStartOf="@+id/sb_fp"
+        android:text="@string/skill" />
+
+    <SeekBar
+        android:id="@+id/sb_skill"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_skill"
+        android:layout_toEndOf="@+id/tv_skill"
+        android:layout_toRightOf="@+id/tv_skill"
+        android:max="9"
+        android:progress="1" />
+</RelativeLayout>

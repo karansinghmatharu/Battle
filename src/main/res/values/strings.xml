@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Battle</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_players">Enter the players</string>
+    <string name="autobot">Autobot</string>
+    <string name="decp">Decpticon</string>
+    <string name="text_add_button">Add Autobot</string>
+    <string name="add_auto"> Click on AutoBot button to make a group of \n Autobots </string>
+    <string name="add_decp"> Click on Decepticon button to make a group of \n Decepticons </string>
+    <string name="title_splash">AUTO BOTS \n V/S \n DECEPTICONS</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="enter_trans">Name the \n</string>
+    <string name="hint_enter_autobot_name">Enter name</string>
+    <string name="strength">Strength</string>
+    <string name="intelligence">Intelligence</string>
+    <string name="speed">Speed</string>
+    <string name="endurance">Endurance</string>
+    <string name="rank">Rank</string>
+    <string name="courage">Courage</string>
+    <string name="firepower">Firepower</string>
+    <string name="skill">Skill</string>
+    <string name="overall">Rating : </string>
+    <string name="name">Name : </string>
+    <string name="rank_title">Rank : </string>
+    <string name="fight">Fight</string>
+    <string name="game_over"> GAME \nOVER </string>
+    <string name="play_again">Play Again</string>
+    <string name="winning_team">Winning Team : </string>
+    <string name="battles">Battles Fought : </string>
+    <string name="survivors">Survivors from the losing team : \n</string>
+    <string name="tie_text">No one won as it\'s a TIE</string>
+    <string name="tie_survivor">Survivors that survied a TIE : </string>
+</resources>
